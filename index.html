@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MUSIC_PLAYER</title>
+	<link type="text/css" rel="stylesheet" href="css/ui.css"/>
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<div class="music_player clearfix">
+		
+		<audio id="musicPlayer" src="http://mr3.douban.com/201309240940/971dc4d0656df7f099651eac36652c2b/view/song/small/p1451358.mp3"></audio>
+
+		<div class="music_cover">
+			<img src="./images/demo1.jpg" alt="" id="cover_img"/>
+		</div>
+		
+		<div class="music_info">
+			<div id="music_data">
+				<div class="author">
+					<p class="artist"></p>
+					<p class="album">
+						<em class="album_title"></em>
+						<time class="public_time">2013</time>
+					</p>
+				</div>
+				<div class="player">
+					<p class="title"></p>
+					<div class="progress_box">
+						<div class="progress" style="width:0px;" id="progress"></div>
+					</div>
+					<p class="player_info">
+						<em class="play_time" id="totalTime">0:00</em>
+						<a href="#" class="player_icon volume_icon"  aria-hidden="true" data-icon="&#xe044;"></a>
+					</p>
+				</div>
+			</div>
+		
+			<div class="player_opera">
+				<a href="#" class="player_icon like_icon" id="loveBtn" title="收藏" aria-hidden="true" data-icon="&#xe01f;"></a>
+				<a href="#" class="player_icon rubbish_icon" title="删除" aria-hidden="true" data-icon="&#xe01d;"></a>
+				<a href="#" class="player_icon next_icon" id="nextBtn" title="下一首" aria-hidden="true" data-icon="&#xe046;"></a>
+				<a href="#" class="player_icon play_icon" id="playBtn" title="暂停" aria-hidden="true" data-icon="&#xe04c;"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="player_bg"></div>
+
+	<script type="text/javascript" src="./lib/zepto.js"></script>
+	<script type="text/javascript" src='./lib/rgbaster.js'></script>
+
+	<script type="text/javascript" src="./js/MP5.js"></script>
+	<script type="text/javascript" src="./js/music.js"></script>
+</body>
+</html>
